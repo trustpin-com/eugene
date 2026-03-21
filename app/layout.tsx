@@ -20,20 +20,13 @@ export const metadata: Metadata = {
     default: "Eugene Jones",
     template: "%s | joneseugene.com",
   },
-  description: "My Portfolio",
+  description: "My personal WebApp",
   openGraph: {
-    title: "chronark.com",
+    title: "joneseugeneceo.com",
     description:
-      "My Portfolio",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
-    images: [
-      {
-        url: "https://chronark.com/og.png",
-        width: 1920,
-        height: 1080,
-      },
-    ],
+      "My personal WebApp",
+    url: "joneseugene.com",
+    siteName: "joneseugeneceo.com",
     locale: "en-US",
     type: "website",
   },
@@ -48,7 +41,11 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
