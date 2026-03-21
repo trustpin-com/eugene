@@ -5,6 +5,7 @@ import { UnderlineLink } from "../ui/UnderlineLink";
 
 
 export default function HeroSection() {
+    const appUrl = "https://eugene-ten.vercel.app";
     return (
         <div className="flex flex-col items-center justify-center w-full min-h-screen overflow-hidden bg-linear-to-tl from-black via-zinc-600/20 to-black">
             <div className="my-8 animate-fade-in">
@@ -47,17 +48,30 @@ export default function HeroSection() {
                     </UnderlineLink>
 
                     <UnderlineLink href="/activity">
-                       My Work
+                        My Work
                     </UnderlineLink>
 
                     <UnderlineLink href="/portfolio">
                         Portfolio
                     </UnderlineLink>
 
-
                     <UnderlineLink href="/contact">
                         Contacts
                     </UnderlineLink>
+                </div>
+
+                {/* QR CODE SECTION */}
+                <div className="mt-10 flex flex-col items-center justify-center">
+                    <p className="text-xs text-zinc-400 mb-3">
+                        Scan to open the app
+                    </p>
+                    <Image
+                        src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(appUrl)}`}
+                        alt="QR Code"
+                        width={150}
+                        height={150}
+                        className="rounded-md border border-white/20"
+                    />
                 </div>
             </div>
         </div>
