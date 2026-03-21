@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import NavbarWrapper from "@/components/ui/NavbarWrapper";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -56,11 +57,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
+    <html lang="en" className={[inter.variable, calSans.variable].join(" ")} data-scroll-behavior="smooth">
       <body
         className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-          }`}
-      >{children}
+          }`}>
+        <NavbarWrapper />
+        {children}
       </body>
     </html>
   );

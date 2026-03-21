@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Particles from "@/components/particles";
+import Particles from "@/components/ui/Particles";
 import { OutlineButton } from "@/components/ui/OutlineButton";
 import { UnderlineLink } from "../ui/UnderlineLink";
 
@@ -45,6 +45,15 @@ export default function HeroSection() {
                     <UnderlineLink href="/about">
                         About Me
                     </UnderlineLink>
+
+                    <UnderlineLink href="/activity">
+                       My Work
+                    </UnderlineLink>
+
+                    <UnderlineLink href="/portfolio">
+                        Portfolio
+                    </UnderlineLink>
+
 
                     <UnderlineLink href="/contact">
                         Contacts
