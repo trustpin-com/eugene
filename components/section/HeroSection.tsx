@@ -51,10 +51,6 @@ export default function HeroSection() {
                         My Work
                     </UnderlineLink>
 
-                    <UnderlineLink href="/portfolio">
-                        Portfolio
-                    </UnderlineLink>
-
                     <UnderlineLink href="/contact">
                         Contacts
                     </UnderlineLink>
