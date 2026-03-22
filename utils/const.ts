@@ -19,14 +19,13 @@ export const activities = [
     period: "2023 - 2024",
     description: [
       "Managed and added features on GAPS (the Corporate Banking platform).",
-      "Developed an API help integrate Wallet Providers for easy customers to easily access their finances.",
+      "Developed an API to help integrate Wallet Providers for customers to easily access their finances.",
       "Integrated the Bank with the Government's NIN platform for financial inclusion and tracking.",
     ],
   },
   {
     title: "Donation",
-    institution:
-      "Albert Academy Secondary School",
+    institution: "Albert Academy Secondary School",
     logo: "/images/albert_academy_logo.jpg",
     period: "Present",
     description: [
